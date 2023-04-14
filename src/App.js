@@ -1,7 +1,10 @@
+import { Tag } from "./components/Tag";
 
 function App() {
   return (
-    <div>Test</div>
+    <div className="App">
+      <Tag props={{ name: "Cozy" }} />
+    </div>
   );
 }
 
