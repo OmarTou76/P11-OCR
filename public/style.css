@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+:root {
+    --redKasa: #FF6060;
+    --greyBG: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
