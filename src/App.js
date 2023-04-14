@@ -1,13 +1,20 @@
+import { useState } from "react";
 import { Tag } from "./components/Tag";
 import { Thumb } from "./components/Thumb";
 import './components/styles/components.css'
+import { data } from "./data";
+import { Dropdown } from "./components/Dropdown";
 
 function App() {
+
   return (
     <div className="App">
-      <Tag props={{ name: "Cozy" }} />
-      <Thumb props={{ image: "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg", title: "Appartement cosy" }} />
+      <Thumb props={{ image: data[0].cover, title: data[0].title }} />
+      {data[0].tags.map(tag => <Tag props={{ name: tag }} />)}
+      <Dropdown props={{ title: "Description", list: data[0].equipments }} />
+      <Dropdown props={{ title: "Fiabilité", list: ["La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."] }} />
     </div>
+
   );
 }
 
