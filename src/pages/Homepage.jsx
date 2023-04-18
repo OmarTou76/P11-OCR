@@ -7,7 +7,7 @@ import { Carousel } from "../components/Carousel";
 
 export const Homepage = () => {
     return (
-        <div className="App">
+        <div>
             <Thumb props={{ image: data[10].cover, title: data[10].title }} />
             {data[10].tags.map(tag => <Tag props={{ name: tag }} />)}
             <Dropdown props={{ title: "Description", list: data[10].equipments }} />

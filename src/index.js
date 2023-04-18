@@ -32,7 +32,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <RouterProvider router={router} />
+    <main className='container'>
+      <RouterProvider router={router} />
+    </main>
     <Footer />
   </React.StrictMode>
 );
