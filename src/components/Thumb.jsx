@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const Thumb = ({ props }) => {
+export const Thumb = ({ picture, title, logementId }) => {
     return (
-        <div className='Thumb'>
-            <img className='Thumb__cover' src={props.image} alt={props.title} />
+        <a href={`/logement/${logementId}`} className='Thumb'>
+            <img className='Thumb__cover' src={picture} alt={title} />
             <div className='Thumb__title'>
-                <p>{props.title}</p>
+                <p>{title}</p>
             </div>
-        </div>
+        </a>
     )
 }

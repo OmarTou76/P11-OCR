@@ -13,8 +13,8 @@ export const Header = () => {
                 <img src={logo} alt='Kasa Logo' />
             </a>
             <nav className='Header__nav'>
-                <a href="/" className={!currentPage && "isActive"}>Acceuil</a>
-                <a href="/about" className={currentPage === 'about' && "isActive"}
+                <a href="/" className={!currentPage ? "isActive" : ""}>Acceuil</a>
+                <a href="/about" className={currentPage === 'about' ? "isActive" : ""}
                 >A Propos</a>
             </nav>
         </div>
