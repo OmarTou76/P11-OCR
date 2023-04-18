@@ -4,13 +4,16 @@
     --greyBG: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
 }
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
 
-.App {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 5rem;
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem 1rem;
+    }
 }
 
 *, *::before, *::after{
@@ -21,4 +24,9 @@
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
