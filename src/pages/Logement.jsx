@@ -6,6 +6,7 @@ import { Tag } from "../components/Tag"
 import './styles/logement.css';
 import { UserCard } from '../components/UserCard'
 import { UserRating } from '../components/UserRating'
+import { Dropdown } from '../components/Dropdown'
 
 export const Logement = () => {
     const { id } = useParams()
@@ -39,6 +40,10 @@ export const Logement = () => {
                         <UserRating rating={logement.rating} />
                     </div>
                 </div>
+            </div>
+            <div className="Logement__description">
+                <Dropdown title="Description" list={[logement.description]} />
+                <Dropdown title="Équipements" list={logement.equipments} />
             </div>
         </>
     )

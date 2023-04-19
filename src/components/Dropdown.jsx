@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const Dropdown = ({ props }) => {
+export const Dropdown = ({ title, list }) => {
 
     const [isOpen, setDropdownState] = useState(false)
 
@@ -8,14 +8,14 @@ export const Dropdown = ({ props }) => {
         <div className='Dropdown'>
             <div className='Dropdown__title' onClick={() => setDropdownState(!isOpen)}>
                 <p>
-                    {props.title}
+                    {title}
                 </p>
                 <i className={`fas fa-chevron-down Dropdown__chevron${isOpen ? " isOpen" : ""}`}></i>
             </div>
             <div className={`Dropdown__list ${isOpen ? " Dropdown__open" : ""}`}>
                 <ul>
-                    {props.list.map(element => (
-                        <li>{element}</li>
+                    {list.map((element, id) => (
+                        <li key={`${element}-${id}`}>{element}</li>
                     ))}
                 </ul>
             </div>

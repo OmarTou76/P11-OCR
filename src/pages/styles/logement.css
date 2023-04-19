@@ -30,6 +30,11 @@
     justify-content: space-between;
 }
 
+.Logement__description {
+    display: flex;
+    gap: 4.5rem;
+    margin-top: 1rem;
+}
 @media screen and (max-width: 768px) {
     .Logement {
         flex-direction: column;
@@ -39,12 +44,15 @@
         flex-direction: row-reverse;
         align-items: center;
     }
-}
-@media screen and (max-width: 768px) {
+    
     .Logement__title h1 {
         font-size: 18px;
     }
     .Logement__title p {
         font-size: 14px;
+    }
+    .Logement__description {
+        gap: 1rem;
+        flex-direction: column;
     }
 }
