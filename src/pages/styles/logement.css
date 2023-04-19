@@ -12,7 +12,11 @@
     align-items: baseline;
     gap: 1rem;
 }
-
+.Logement__title {
+    display: flex;   
+    flex-direction: column;
+    gap: 2px;
+}
 .Logement__title h1 {
     font-size: 36px;
 }
@@ -43,6 +47,10 @@
     .Logement__user {
         flex-direction: row-reverse;
         align-items: center;
+    }
+
+    .Logement__title {
+        gap: 5px;
     }
     
     .Logement__title h1 {
