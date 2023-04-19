@@ -1,0 +1,12 @@
+.AboutUs {
+    display: flex;
+    padding: 1rem 6rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 650px) {
+    .AboutUs {
+        padding: 1rem 0;
+    }
+}

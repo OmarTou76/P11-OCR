@@ -1,11 +1,19 @@
 import React from 'react'
 import { PictureLayout } from '../components/PictureLayout'
-import homeBG from '../assets/homeBG.png'
+import aboutBG from '../assets/aboutBG.png'
+import { Dropdown } from '../components/Dropdown'
+import './styles/aboutUs.css';
 
 export const AboutUs = () => {
     return (
-        <div>
-            <PictureLayout picture={homeBG} text='Chez vous,  partout et ailleurs' />
-        </div>
+        <>
+            <PictureLayout picture={aboutBG} />
+            <div className="AboutUs">
+                <Dropdown title="Fiabilité" list={["Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."]} />
+                <Dropdown title="Respect" list={["La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."]} />
+                <Dropdown title="Service" list={["Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."]} />
+                <Dropdown title="Respect" list={["La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."]} />
+            </div>
+        </>
     )
 }
