@@ -1,0 +1,39 @@
+.NoMatch {
+    color: var(--redKasa);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1rem;
+}
+.NoMatch h1 {
+    font-size: 288px;
+    font-weight: 700;
+}
+.NoMatch h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.NoMatch a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 3rem;
+}
+
+@media screen and (max-width: 650px) {
+    .NoMatch {
+        gap: 0;
+    }
+    .NoMatch h1 {
+        font-size: 96px;
+    }
+    .NoMatch h2 {
+        font-size: 18px;
+    }
+    
+    .NoMatch a {
+        font-size: 14px;
+    }   
+}
