@@ -26,9 +26,13 @@ export const Carousel = ({ title, pictures }) => {
 
     return (
         <div className='Carousel'>
-            <i className="fas fa-chevron-left Carousel__nav" onClick={() => handleCarousel("prev")}></i>
-            <i onClick={() => handleCarousel("next")} className="fas fa-chevron-right Carousel__nav Carousel__nav__next"></i>
-            <span className='Carousel__pagination'>{(carouselPosition / 100) + 1}/{pictures.length}</span>
+            {pictures.length > 1 && (
+                <>
+                    <i className="fas fa-chevron-left Carousel__nav" onClick={() => handleCarousel("prev")}></i>
+                    <i onClick={() => handleCarousel("next")} className="fas fa-chevron-right Carousel__nav Carousel__nav__next"></i>
+                    <span className='Carousel__pagination'>{(carouselPosition / 100) + 1}/{pictures.length}</span>
+                </>
+            )}
             <div className='Carousel__pictures' style={{
                 transform: `translateX(-${carouselPosition}%)`
             }}>
