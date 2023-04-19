@@ -65,4 +65,7 @@
         gap: 1rem;
         flex-direction: column;
     }
+    .Logement__info {
+        gap: .5rem;
+    }
 }

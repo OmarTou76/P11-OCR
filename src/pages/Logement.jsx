@@ -20,6 +20,9 @@ export const Logement = () => {
         }
     }, [logement])
 
+    if (!logement) {
+        return
+    }
 
     return (
         <>
