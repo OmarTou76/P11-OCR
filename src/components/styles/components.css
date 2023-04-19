@@ -300,9 +300,12 @@ footer p {
     .PictureLayout div {
         padding: 0 1rem;
     }
-    .PictureLayoutHome {
-        height: 111px;
+    .PictureLayout {
         border-radius: 10px;
+    }
+    .PictureLayoutHome {
+        
+        height: 111px;
     }
 
     .UserCard__name {
