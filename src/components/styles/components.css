@@ -287,7 +287,7 @@ footer p {
  .Rating {
     color: #E3E3E3;
     display: flex;
-    gap: .2rem;
+    gap: .5rem;
     justify-content: flex-end;
     font-size: 24px;
  }
