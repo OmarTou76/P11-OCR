@@ -9,6 +9,7 @@
 }
 
 
+
 .Thumb {
     min-height: 21.25rem;
     background: black;
@@ -18,10 +19,12 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 620px) { 
-    
+@media screen and (max-width: 620px) {    
     .Thumb {
         min-height: auto;
+    }
+    .Tag {
+        font-size: 10px;
     }
 }
 
@@ -274,6 +277,18 @@ footer p {
     border-radius: 50px;
  }
 
+ .Rating {
+    color: #E3E3E3;
+    display: flex;
+    gap: .2rem;
+    justify-content: flex-end;
+    font-size: 24px;
+ }
+
+ .Rating__star {
+    color: var(--redKasa);
+ }
+
 @media screen and (max-width: 519px) {
     .PictureLayout div {
         padding: 0 1rem;
@@ -290,16 +305,8 @@ footer p {
         height: 32px;
         width: 32px;
      }
- }
 
- .Rating {
-    color: #E3E3E3;
-    display: flex;
-    gap: .2rem;
-    justify-content: flex-end;
-    font-size: 24px;
- }
-
- .Rating__star {
-    color: var(--redKasa);
+     .Rating {
+        font-size: 13px;
+     }
  }
