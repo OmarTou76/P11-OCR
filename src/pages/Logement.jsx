@@ -18,7 +18,7 @@ export const Logement = () => {
         if (!logement) {
             navigate('/nomatch')
         }
-    }, [logement])
+    }, [logement, navigate])
 
     if (!logement) {
         return

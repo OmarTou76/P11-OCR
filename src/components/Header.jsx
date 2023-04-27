@@ -1,21 +1,22 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { Link, useLocation } from 'react-router-dom'
 
 export const Header = () => {
 
-    const { pathname } = window.location
+    const { pathname } = useLocation()
 
     const currentPage = pathname.split('/')[1]
 
     return (
         <div className="Header container">
-            <a href='/' className="Header__logo">
+            <Link to='/' className="Header__logo">
                 <img src={logo} alt='Kasa Logo' />
-            </a>
+            </Link>
             <nav className='Header__nav'>
-                <a href="/" className={!currentPage ? "isActive" : ""}>Acceuil</a>
-                <a href="/about" className={currentPage === 'about' ? "isActive" : ""}
-                >A Propos</a>
+                <Link to="/" className={!currentPage ? "isActive" : ""}>Acceuil</Link>
+                <Link to="/about" className={currentPage === 'about' ? "isActive" : ""}
+                >A Propos</Link>
             </nav>
         </div>
     )
