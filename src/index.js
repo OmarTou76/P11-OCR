@@ -6,7 +6,7 @@ import { AboutUs } from './pages/AboutUs';
 import { Logement } from './pages/Logement';
 import { NoMatch } from './pages/NoMatch';
 import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { Footer } from './components/Footer/Footer';
 import './components/styles/components.css'
 import "./pages/styles/style.css"
 

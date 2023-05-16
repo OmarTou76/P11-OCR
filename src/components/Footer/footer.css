@@ -1,0 +1,26 @@
+
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    align-items: center;
+}
+
+footer img {
+    height: 2.5rem;
+}
+
+footer p {
+    font-size: 24px;
+    font-weight: 500;
+} 
+
+
+@media screen and (max-width: 519px) {
+    footer p {
+        font-size: 12px;
+    }
+}
