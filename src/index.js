@@ -4,7 +4,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Homepage } from './pages/Homepage/Homepage';
 import { AboutUs } from './pages/AboutUs/AboutUs';
 import { Logement } from './pages/Logement/Logement';
-import { NoMatch } from './pages/NoMatch';
+import { NoMatch } from './pages/NoMatch/NoMatch';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 
