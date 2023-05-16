@@ -1,0 +1,22 @@
+.Tag {
+    font-size: 14px;
+    background: var(--redKasa);
+    border-radius: 10px;
+    color: white;
+    padding: .2rem 1.5rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media screen and (max-width: 620px) {    
+    .Tag {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    .Tag {
+        font-size: 10px;
+        border-radius: 5px;
+    }
+}
