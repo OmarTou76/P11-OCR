@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
+import './carousel.css'
 
 export const Carousel = ({ title, pictures }) => {
 
     const [carouselPosition, setCarouselPosition] = useState(0)
-
+    /**
+     * Update carousel position 
+     * @param {*} direction next direction (previous or next)
+     */
     const handleCarousel = (direction) => {
         let nextDirection
         if (direction === "prev") {
@@ -14,7 +18,7 @@ export const Carousel = ({ title, pictures }) => {
             }
         } else if (direction === "next") {
             if (carouselPosition === (pictures.length - 1) * 100) {
-                nextDirection = 0                   // Premiere position
+                nextDirection = 0                   // Retourn a la premiere position
             } else {
                 nextDirection = carouselPosition + 100 // Suivant
             }
