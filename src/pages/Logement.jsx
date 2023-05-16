@@ -5,7 +5,7 @@ import { Carousel } from "../components/Carousel/Carousel"
 import { Tag } from "../components/Tag/Tag"
 import './styles/logement.css';
 import { UserCard } from '../components/UserCard/UserCard'
-import { UserRating } from '../components/UserRating'
+import { UserRating } from '../components/UserRating/UserRating'
 import { Dropdown } from '../components/Dropdown/Dropdown'
 
 export const Logement = () => {

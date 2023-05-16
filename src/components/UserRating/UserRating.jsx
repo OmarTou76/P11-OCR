@@ -1,4 +1,5 @@
 import React from 'react'
+import './userRating.css'
 
 export const UserRating = ({ rating }) => {
     return (
