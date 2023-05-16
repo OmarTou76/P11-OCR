@@ -1,4 +1,5 @@
 import React from 'react'
+import './pictureLayout.css'
 
 export const PictureLayout = ({ picture, text = '', additionalStyle = "" }) => {
     return (

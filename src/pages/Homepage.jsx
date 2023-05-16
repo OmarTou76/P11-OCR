@@ -1,7 +1,7 @@
 import React from 'react'
 import { Thumb } from "../components/Thumb";
 import { data } from "../data";
-import { PictureLayout } from '../components/PictureLayout';
+import { PictureLayout } from '../components/PictureLayout/PictureLayout';
 import homeBG from '../assets/homeBG.png'
 import './styles/homepage.css';
 
