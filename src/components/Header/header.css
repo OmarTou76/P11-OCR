@@ -1,0 +1,30 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Header__nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 24px;
+    color: var(--redKasa);
+    font-weight: 500;
+}
+
+.Header__nav .isActive {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 519px) {
+    .Header img {
+        width: 7rem;
+    }
+    .Header__nav {
+        font-size: 12px;
+        gap: 10px;
+    }
+
+}
