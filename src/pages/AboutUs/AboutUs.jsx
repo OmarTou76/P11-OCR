@@ -1,8 +1,8 @@
 import React from 'react'
-import { PictureLayout } from '../components/PictureLayout/PictureLayout'
-import aboutBG from '../assets/aboutBG.png'
-import { Dropdown } from '../components/Dropdown/Dropdown'
-import './styles/aboutUs.css';
+import { PictureLayout } from '../../components/PictureLayout/PictureLayout'
+import { Dropdown } from '../../components/Dropdown/Dropdown'
+import aboutBG from '../../assets/aboutBG.png'
+import './aboutUs.css';
 
 export const AboutUs = () => {
     return (
