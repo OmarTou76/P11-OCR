@@ -1,0 +1,26 @@
+.UserCard {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: flex-end;
+}
+.UserCard__name {
+     font-weight: 500;
+     font-size: 18px;
+     text-align: right;
+ }
+ .UserCard img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50px;
+ }
+
+ @media screen and (max-width: 519px) {
+    .UserCard__name {
+        font-size: 12px;
+     }
+     .UserCard img {
+        height: 32px;
+        width: 32px;
+     }
+ }

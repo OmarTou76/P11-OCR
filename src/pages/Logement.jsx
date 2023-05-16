@@ -4,7 +4,7 @@ import { data } from '../data'
 import { Carousel } from "../components/Carousel/Carousel"
 import { Tag } from "../components/Tag/Tag"
 import './styles/logement.css';
-import { UserCard } from '../components/UserCard'
+import { UserCard } from '../components/UserCard/UserCard'
 import { UserRating } from '../components/UserRating'
 import { Dropdown } from '../components/Dropdown/Dropdown'
 

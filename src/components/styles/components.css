@@ -1,22 +1,4 @@
 
-
-.UserCard {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    justify-content: flex-end;
-}
-.UserCard__name {
-     font-weight: 500;
-     font-size: 18px;
-     text-align: right;
- }
- .UserCard img {
-    height: 64px;
-    width: 64px;
-    border-radius: 50px;
- }
-
  .Rating {
     color: #E3E3E3;
     display: flex;
@@ -30,14 +12,6 @@
  }
 
 @media screen and (max-width: 519px) {
-    .UserCard__name {
-        font-size: 12px;
-     }
-     .UserCard img {
-        height: 32px;
-        width: 32px;
-     }
-
      .Rating {
         font-size: 13px;
      }

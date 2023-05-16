@@ -1,4 +1,5 @@
 import React from 'react'
+import './userCard.css'
 
 export const UserCard = ({ name, picture }) => {
     const [firstName, lastName] = name.split(' ')
