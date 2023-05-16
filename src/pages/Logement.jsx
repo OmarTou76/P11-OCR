@@ -6,7 +6,7 @@ import { Tag } from "../components/Tag"
 import './styles/logement.css';
 import { UserCard } from '../components/UserCard'
 import { UserRating } from '../components/UserRating'
-import { Dropdown } from '../components/Dropdown'
+import { Dropdown } from '../components/Dropdown/Dropdown'
 
 export const Logement = () => {
     const { id } = useParams()

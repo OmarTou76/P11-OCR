@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './dropdown.css'
 
 export const Dropdown = ({ title, list }) => {
 
