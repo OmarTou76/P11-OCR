@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './thumb.css'
 
 export const Thumb = ({ picture, title, logementId }) => {
     return (
