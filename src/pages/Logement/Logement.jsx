@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { data } from '../data'
-import { Carousel } from "../components/Carousel/Carousel"
-import { Tag } from "../components/Tag/Tag"
-import './styles/logement.css';
-import { UserCard } from '../components/UserCard/UserCard'
-import { UserRating } from '../components/UserRating/UserRating'
-import { Dropdown } from '../components/Dropdown/Dropdown'
+import { data } from '../../data'
+import { Carousel } from "../../components/Carousel/Carousel"
+import { Tag } from "../../components/Tag/Tag"
+import './logement.css';
+import { UserCard } from '../../components/UserCard/UserCard'
+import { UserRating } from '../../components/UserRating/UserRating'
+import { Dropdown } from '../../components/Dropdown/Dropdown'
 
 export const Logement = () => {
     const { id } = useParams()
