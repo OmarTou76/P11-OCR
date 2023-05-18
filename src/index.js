@@ -7,7 +7,7 @@ import { Logement } from './pages/Logement/Logement';
 import { NoMatch } from './pages/NoMatch/NoMatch';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
-
+import './index.css'
 const router = createBrowserRouter([
   {
     element:
